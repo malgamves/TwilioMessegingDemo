@@ -11,8 +11,8 @@ namespace YourNewConsoleApp
         static void Main(string[] args)
         {
             // Find your Account Sid and Auth Token at twilio.com/console
-            const string accountSid = "AC117596442d700a77b3708ddcdeeeb989";
-            const string authToken = "fb44c72c89e6c48afe326951b5f1520f";
+            const string accountSid = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+            const string authToken = "xxxxxxxxxxxxxxxxxxxxxxxxxxx";
             TwilioClient.Init(accountSid, authToken);
 
             Console.WriteLine("\nGet ready to send a text! ");

@@ -8,4 +8,4 @@ UTF-8 messages with Twilio
 - Add your Twilio phone number too, you get this [here](https://www.twilio.com/console/phone-numbers/incoming)
 - Save everything and run it by pressing the green play button in Visual Studio :sparkles;
 
-# Happy programmable testing :
+# Happy Programmable Texting :envelope:

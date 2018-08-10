@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Twilio" Version="5.13.8" />
+    <PackageReference Include="Unicode.net" Version="0.1.2" />
   </ItemGroup>
 
 </Project>

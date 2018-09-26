@@ -21,8 +21,7 @@ namespace YourNewConsoleApp
             var rec = "<Your reciepients phone number";
 
             // Add the message you want to send here
-            // It's important to note the escape characters being used as well as the way we add a Blush Emoji ( More info in the docs ) 
-            string text = "\"The \u00C6olean Harp\", by Samuel Taylor Coleridge is one of my favourite books! \u03C8" + Emoji.Blush + "\n \u4EF0 is \u26C4 in Japanese ( jk. \u270B)";
+            string text = "Hello! Is it memes you're looking for?";
 
             var to = new PhoneNumber(rec);
 

@@ -3,12 +3,11 @@ using System;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
-using J3QQ4; // Let's us access Emoji without using escape characters
 
 
-namespace YourNewConsoleApp
+namespace textio
 {
-    class Example
+    class Program
     {
         static void Main(string[] args)
         {
@@ -20,21 +19,22 @@ namespace YourNewConsoleApp
             // Add the number you want to send a text to here
             var rec = "<Your reciepients phone number";
 
+            //Add your Twilio phone number here
+            var phone = "<Your Twilio Phone Number>";
             // Add the message you want to send here
             string text = "Hello! Is it memes you're looking for?";
 
             var to = new PhoneNumber(rec);
-
             // Putting everything together and sending the text
             var message = MessageResource.Create(
-                to,
-                from: new PhoneNumber("<Your Twilio Phone Number>"), // Add your registred Twilio number here
-                body: text);
+            to,
+            from: new PhoneNumber(phone), body: text);
 
             Console.WriteLine("\nYou just sent a text with Twilio *Mic Drop* ");
             Console.WriteLine(message.Sid);
             Console.Write("\nSuccess! Press any key to exit...");
             Console.ReadKey(true);
+            
         }
     }
 }

@@ -17,12 +17,14 @@ namespace textio
             TwilioClient.Init(accountSid, authToken);
 
             // Add the number you want to send a text to here
-            var rec = "<Your reciepients phone number";
+            string rec = "<Your reciepients phone number";
 
             //Add your Twilio phone number here
-            var phone = "<Your Twilio Phone Number>";
-            // Add the message you want to send here
-            string text = "Hello! Is it memes you're looking for?";
+            string phone = "<Your Twilio Phone Number>";
+            //  The message you want to send comes here
+            Console.WriteLine("Enter your message:"); // Prompt
+            string text = Console.ReadLine();
+            
 
             var to = new PhoneNumber(rec);
             // Putting everything together and sending the text

@@ -17,7 +17,7 @@ namespace textio
             TwilioClient.Init(accountSid, authToken);
 
             // Add the number you want to send a text to here
-            string rec = "<Your reciepients phone number";
+            string rec = "<Your reciepients phone number>";
 
             //Add your Twilio phone number here
             string phone = "<Your Twilio Phone Number>";

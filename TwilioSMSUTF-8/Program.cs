@@ -27,7 +27,6 @@ namespace textio
             Console.WriteLine("Enter your message:"); // Prompt
             string text = Console.In.ReadLine();
             text = DecodeEncodedNonAsciiCharacters(text);
-            Debug.Print(text);
 
             var to = new PhoneNumber(rec);
             // Putting everything together and sending the text
